@@ -1,7 +1,9 @@
 package com.ui.pages;
 
 import com.constants.Browser;
+import static com.constants.Environment.*;
 import com.utility.BrowserUtil;
+import static com.utility.PropertiesUtil.*;
 import org.openqa.selenium.By;
 
 public final class HomePage extends BrowserUtil {
@@ -9,7 +11,7 @@ public final class HomePage extends BrowserUtil {
 
     public HomePage(Browser browser) {
         super(browser);
-        goToWebSite("http://www.automationpractice.pl/index.php");
+        goToWebSite(readProperty(QA, "URL"));
     }
 
     public LoginPage goToLoginPage(){ //page functions
