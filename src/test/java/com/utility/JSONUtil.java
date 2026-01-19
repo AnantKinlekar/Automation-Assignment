@@ -11,20 +11,20 @@ import java.io.FileReader;
 
 public class JSONUtil {
 
-    public static String readJson(Env env) {
+    public static Environment readJson(Env env) {
         Gson gson = new Gson();
         FileReader fileReader;
         Config config;
         Environment environment = null;
         File jsonFile = null;
         try {
-            jsonFile = new File("src/test/resources/config/properties/config.json");
+            jsonFile = new File("src/test/resources/config/config.json");
             fileReader = new FileReader(jsonFile);
             config = gson.fromJson(fileReader, Config.class);
             environment = config.getEnvironments().get(env.toString());
         } catch (FileNotFoundException e) {
             System.err.println(e.getMessage());
         }
-        return environment.getUrl();
+        return environment;
     }
 }

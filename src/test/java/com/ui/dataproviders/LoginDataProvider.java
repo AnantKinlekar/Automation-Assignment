@@ -3,6 +3,8 @@ package com.ui.dataproviders;
 import com.google.gson.Gson;
 import com.ui.pojo.TestData;
 import com.ui.pojo.User;
+import com.utility.CSVReaderUtil;
+import com.utility.ExcelReaderUtil;
 import org.testng.annotations.DataProvider;
 
 import java.io.File;
@@ -33,5 +35,15 @@ public class LoginDataProvider {
         }
 
         return dataToReturn.iterator();
+    }
+
+    @DataProvider(name = "loginCSVDataProvider")
+    public Iterator<User> loginCSVDataProvider(){
+        return CSVReaderUtil.readCSVFile("loginData.csv");
+    }
+
+    @DataProvider(name = "loginExcelDataProvider")
+    public Iterator<User> loginExcelDataProvider(){
+        return ExcelReaderUtil.readExcelFile("LoginData.xlsx");
     }
 }

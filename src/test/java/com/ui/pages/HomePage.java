@@ -12,7 +12,7 @@ public final class HomePage extends BrowserUtil {
 
     public HomePage(Browser browser) {
         super(browser);
-        goToWebSite(JSONUtil.readJson(QA));
+        goToWebSite(JSONUtil.readJson(QA).getUrl());
     }
 
     public LoginPage goToLoginPage(){ //page functions
