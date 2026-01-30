@@ -1,18 +1,16 @@
-2026-01-24 15:04:06 [main] INFO com.ui.listeners.TestListener::onStart : 52 Test Suit Started 
-2026-01-24 15:04:06 [main] INFO com.ui.tests.LoginTest::setup : 23 Loading the homepage 
-2026-01-24 15:04:06 [main] INFO com.ui.pages.HomePage::<init> : 21 Launching browser for 'CHROME' 
-2026-01-24 15:04:08 [main] INFO com.ui.pages.HomePage::maximizeWindow : 45 Maximizing the browser Window  
-2026-01-24 15:04:08 [main] INFO com.ui.pages.HomePage::goToWebSite : 40 Visiting the website: http://www.automationpractice.pl 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 24 loginTest 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 25 Verify if the valid user is able to login into the application. 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 [e2e, sanity] 
-2026-01-24 15:04:08 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 45 loginTest:  SKIPPED 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 24 loginTest 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 25 Verify if the valid user is able to login into the application. 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 [e2e, sanity] 
-2026-01-24 15:04:08 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 45 loginTest:  SKIPPED 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 24 loginTest 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 25 Verify if the valid user is able to login into the application. 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 [e2e, sanity] 
-2026-01-24 15:04:08 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 45 loginTest:  SKIPPED 
-2026-01-24 15:04:08 [main] INFO com.ui.listeners.TestListener::onFinish : 58 Test Suit Completed 
+2026-01-30 09:08:19 [main] INFO com.ui.listeners.TestListener::onStart : 61 Test Suit Started 
+2026-01-30 09:08:19 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
+2026-01-30 09:08:19 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
+2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onFinish : 67 Test Suit Completed 

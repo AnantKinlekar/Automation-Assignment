@@ -4,6 +4,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.ui.tests.TestBase;
+import com.utility.BrowserUtil;
 import com.utility.ExtentReporterUtil;
 import com.utility.LoggerUtil;
 import org.apache.logging.log4j.Logger;
@@ -37,7 +39,14 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         logger.error(result.getMethod().getMethodName() + ":  FAILED");
         logger.error(result.getThrowable().getMessage());
-        ExtentReporterUtil.getTest().log(Status.FAIL, result.getMethod().getMethodName() );
+        ExtentReporterUtil.getTest().log(Status.FAIL, result.getMethod().getMethodName());
+        ExtentReporterUtil.getTest().log(Status.FAIL, result.getThrowable().getMessage());
+        Object testClass = result.getInstance();
+        BrowserUtil browserUtil = ((TestBase)testClass).getInstance();
+        logger.info("Capturing ScreenShot for the failed test");
+        String screenShotPath = browserUtil.takeScreenShot(result.getMethod().getMethodName());
+        logger.info("Attaching the screenshot to the HTML File");
+        ExtentReporterUtil.getTest().addScreenCaptureFromPath(screenShotPath);
     }
 
     @Override
