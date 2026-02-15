@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class BrowserUtil {
-    private static ThreadLocal<WebDriver> driver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     Logger logger = LogManager.getLogger(this.getClass());
 
 
@@ -30,34 +30,31 @@ public abstract class BrowserUtil {
         logger.info("Launching browser for '" + browserName.toString() + "'");
 
         if (browserName == Browser.CHROME) {
+            ChromeOptions options = new ChromeOptions();
             if (isHeadless) {
-                ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless=old");
-                options.addArguments("--window-size=1920,1080");
-                driver.set(new ChromeDriver(options));
+                BrowserUtil.driver.set(new ChromeDriver(options));
             } else {
-                driver.set(new ChromeDriver());
-                maximizeWindow();
+                options.addArguments("--window-size=1920,1080");
+                BrowserUtil.driver.set(new ChromeDriver(options));
             }
         } else if (browserName == Browser.FIREFOX) {
+            FirefoxOptions options = new FirefoxOptions();
             if (isHeadless) {
-                FirefoxOptions options = new FirefoxOptions();
                 options.addArguments("--headless=old");
-                options.addArguments("--window-size=1920,1080");
-                driver.set(new FirefoxDriver(options));
+                BrowserUtil.driver.set(new FirefoxDriver(options));
             } else {
-                driver.set(new FirefoxDriver());
-                maximizeWindow();
+                options.addArguments("--window-size=1920,1080");
+                BrowserUtil.driver.set(new FirefoxDriver(options));
             }
         } else if (browserName == Browser.EDGE) {
+            EdgeOptions options = new EdgeOptions();
             if (isHeadless) {
-                EdgeOptions options = new EdgeOptions();
                 options.addArguments("--headless=old");
-                options.addArguments("--window-size=1920,1080");
-                driver.set(new EdgeDriver(options));
+                BrowserUtil.driver.set(new EdgeDriver(options));
             } else {
-                driver.set(new EdgeDriver());
-                maximizeWindow();
+                options.addArguments("--window-size=1920,1080");
+                BrowserUtil.driver.set(new EdgeDriver(options));
             }
         } else {
             logger.error("Browser has not been initialized");
@@ -94,14 +91,14 @@ public abstract class BrowserUtil {
     public String getVisibleText(By locator) {
         logger.info("Finding Element by locator: " + locator);
         WebElement element = driver.get().findElement(locator);
-        logger.info("Element found and not returning the visible text: " + element.getText());
+        logger.info("Element found and now returning the visible text: " + element.getText());
         return element.getText();
     }
 
     public String takeScreenShot(String name) {
         TakesScreenshot screenshot = (TakesScreenshot) driver.get();
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
         String timestamp = format.format(date);
         String path = System.getProperty("user.dir") + "\\screenshots\\" + name + "_" + timestamp + ".png";
         File screenShotData = screenshot.getScreenshotAs(OutputType.FILE);

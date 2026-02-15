@@ -15,7 +15,7 @@ public class TestBase {
     @BeforeMethod(description = "Loading the homepage")
     public void setup() {
         logger.info("Loading the homepage");
-        homePage = new HomePage(CHROME, true);
+        homePage = new HomePage(CHROME, false);
     }
 
     public BrowserUtil getInstance(){

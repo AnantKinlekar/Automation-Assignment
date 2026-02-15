@@ -1,16 +1,93 @@
-2026-01-30 09:08:19 [main] INFO com.ui.listeners.TestListener::onStart : 61 Test Suit Started 
-2026-01-30 09:08:19 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
-2026-01-30 09:08:19 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
-2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
-2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
-2026-01-30 09:08:21 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
-2026-01-30 09:08:21 [main] INFO com.ui.listeners.TestListener::onFinish : 67 Test Suit Completed 
+2026-02-46 13:07:51 [main] INFO com.ui.listeners.TestListener::onStart : 61 Test Suit Started 
+2026-02-46 13:07:51 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
+2026-02-46 13:07:51 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
+2026-02-46 13:07:52 [main] INFO com.ui.pages.HomePage::goToWebSite : 69 Visiting the website: https://automationpractice.techwithjatin.com/ 
+2026-02-46 13:07:53 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-02-46 13:07:53 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-02-46 13:07:53 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.HomePage::goToLoginPage : 21 Trying to perform 'Click to Go to Sign In Page' 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 79 Finding the element by locator: By.xpath: //a[contains(text(), "Sign in")] 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: email 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: videc95111@manupay.com 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: passwd 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: Kishor@123 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 79 Finding the element by locator: By.id: SubmitLogin 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:53 [main] INFO com.ui.pages.MyAccountPage::getVisibleText : 92 Finding Element by locator: By.xpath: //a[@title= 'View my customer account'] 
+2026-02-46 13:07:54 [main] INFO com.ui.pages.MyAccountPage::getVisibleText : 94 Element found and now returning the visible text: Anant Kinlekar 
+2026-02-46 13:07:54 [main] INFO com.ui.listeners.TestListener::onTestSuccess : 34 loginTest:  PASSED 
+2026-02-46 13:07:54 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
+2026-02-46 13:07:54 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
+2026-02-46 13:07:54 [main] INFO com.ui.pages.HomePage::goToWebSite : 69 Visiting the website: https://automationpractice.techwithjatin.com/ 
+2026-02-46 13:07:55 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-02-46 13:07:55 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-02-46 13:07:55 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.HomePage::goToLoginPage : 21 Trying to perform 'Click to Go to Sign In Page' 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 79 Finding the element by locator: By.xpath: //a[contains(text(), "Sign in")] 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: email 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: Anantkinlekar18@gmail.com 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: passwd 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: anant 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 79 Finding the element by locator: By.id: SubmitLogin 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.MyAccountPage::getVisibleText : 92 Finding Element by locator: By.xpath: //a[@title= 'View my customer account'] 
+2026-02-46 13:07:55 [main] WARN com.ui.listeners.TestListener::onTestSkipped : 54 loginTest:  SKIPPED 
+2026-02-46 13:07:55 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
+2026-02-46 13:07:55 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
+2026-02-46 13:07:56 [main] INFO com.ui.pages.HomePage::goToWebSite : 69 Visiting the website: https://automationpractice.techwithjatin.com/ 
+2026-02-46 13:07:57 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-02-46 13:07:57 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-02-46 13:07:57 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.HomePage::goToLoginPage : 21 Trying to perform 'Click to Go to Sign In Page' 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 79 Finding the element by locator: By.xpath: //a[contains(text(), "Sign in")] 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: email 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: Anantkinlekar18@gmail.com 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: passwd 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: anant 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 79 Finding the element by locator: By.id: SubmitLogin 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:57 [main] INFO com.ui.pages.MyAccountPage::getVisibleText : 92 Finding Element by locator: By.xpath: //a[@title= 'View my customer account'] 
+2026-02-46 13:07:57 [main] ERROR com.ui.listeners.TestListener::onTestFailure : 40 loginTest:  FAILED 
+2026-02-46 13:07:57 [main] ERROR com.ui.listeners.TestListener::onTestFailure : 41 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title= 'View my customer account']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbf53ed79468a3c729cad8a345c5f3b8, findElement {using=xpath, value=//a[@title= 'View my customer account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\wheel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65021}, goog:processID: 178632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65021/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbf53ed79468a3c729cad8a345c5f3b8 
+2026-02-46 13:07:57 [main] INFO com.ui.listeners.TestListener::onTestFailure : 46 Capturing ScreenShot for the failed test 
+2026-02-46 13:07:58 [main] INFO com.ui.listeners.TestListener::onTestFailure : 48 Attaching the screenshot to the HTML File 
+2026-02-46 13:07:58 [main] INFO com.ui.tests.LoginTest::setup : 17 Loading the homepage 
+2026-02-46 13:07:58 [main] INFO com.ui.pages.HomePage::<init> : 30 Launching browser for 'CHROME' 
+2026-02-46 13:07:58 [main] INFO com.ui.pages.HomePage::goToWebSite : 69 Visiting the website: https://automationpractice.techwithjatin.com/ 
+2026-02-46 13:07:59 [main] INFO com.ui.listeners.TestListener::onTestStart : 26 loginTest 
+2026-02-46 13:07:59 [main] INFO com.ui.listeners.TestListener::onTestStart : 27 Verify if the valid user is able to login into the application. 
+2026-02-46 13:07:59 [main] INFO com.ui.listeners.TestListener::onTestStart : 28 [e2e, sanity] 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.HomePage::goToLoginPage : 21 Trying to perform 'Click to Go to Sign In Page' 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 79 Finding the element by locator: By.xpath: //a[contains(text(), "Sign in")] 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.HomePage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: email 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: Chaitaleekinlekar18@gmail.com 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.LoginPage::enterText : 86 Finding Element by locator: By.id: passwd 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.LoginPage::enterText : 88 Element Found and now performing enter text: anant 
+2026-02-46 13:07:59 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 79 Finding the element by locator: By.id: SubmitLogin 
+2026-02-46 13:08:00 [main] INFO com.ui.pages.LoginPage::clickOnWebElement : 81 Element Found and now performing Click 
+2026-02-46 13:08:00 [main] INFO com.ui.pages.MyAccountPage::getVisibleText : 92 Finding Element by locator: By.xpath: //a[@title= 'View my customer account'] 
+2026-02-46 13:08:00 [main] ERROR com.ui.listeners.TestListener::onTestFailure : 40 loginTest:  FAILED 
+2026-02-46 13:08:00 [main] ERROR com.ui.listeners.TestListener::onTestFailure : 41 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title= 'View my customer account']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f340631af24d057adb2168cfd85eefc0, findElement {using=xpath, value=//a[@title= 'View my customer account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\wheel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55156}, goog:processID: 216048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55156/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f340631af24d057adb2168cfd85eefc0 
+2026-02-46 13:08:00 [main] INFO com.ui.listeners.TestListener::onTestFailure : 46 Capturing ScreenShot for the failed test 
+2026-02-46 13:08:00 [main] INFO com.ui.listeners.TestListener::onTestFailure : 48 Attaching the screenshot to the HTML File 
+2026-02-46 13:08:00 [main] INFO com.ui.listeners.TestListener::onFinish : 67 Test Suit Completed 
